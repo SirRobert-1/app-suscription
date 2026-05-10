@@ -28,7 +28,7 @@ const ITEMS = [
 
 function TodaviaControlas() {
   return (
-    <div className="flex flex-col items-center justify-between text-center w-screen h-screen py-20 px-40">
+    <div className="flex flex-col items-center justify-between text-center w-screen h-screen py-10 px-40">
       <h1 className={clsx("text-8xl font-bold", geologica.className)}>
         ¿Todavía controlas el acceso con una lista en papel?
       </h1>

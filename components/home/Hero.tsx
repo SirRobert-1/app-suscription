@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-between text-center w-screen h-screen py-20 px-40">
+    <div className="flex flex-col items-center justify-between text-center w-screen h-screen py-10 px-40">
       <img src="/Vertex.svg" alt="Hero Image" className="w-24 h-24" />
       <h1 className={clsx("text-8xl font-bold", geologica.className)}>
         CONTROLA QUIEN ENTRA A TU NEGOCIO

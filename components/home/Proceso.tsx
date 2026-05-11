@@ -1,46 +1,42 @@
-import clsx from 'clsx'
-import { geologica } from '@/app/layout'
+import clsx from 'clsx';
+import { geologica } from '@/lib/fonts';
 
 const ITEMS = [
   {
-    icono: "/Paso1.svg",
-    titulo: "Paso 1: Registro",
+    icono: '/Paso1.svg',
+    titulo: 'Paso 1: Registro',
     texto:
-      "Registra al cliente. El recepcionista captura el nombre, teléfono y plan del cliente en menos de 3 minutos. El sistema genera automáticamente su código QR único.",
+      'Registra al cliente. El recepcionista captura el nombre, teléfono y plan del cliente en menos de 3 minutos. El sistema genera automáticamente su código QR único.',
   },
   {
-    icono: "/Paso2.svg",
-    titulo: "Paso 2: Entrega del QR",
+    icono: '/Paso2.svg',
+    titulo: 'Paso 2: Entrega del QR',
     texto:
-      "El QR llega por WhatsApp. El cliente recibe su credencial directo en su teléfono. Sin apps que descargar, sin contraseñas que recordar.",
+      'El QR llega por WhatsApp. El cliente recibe su credencial directo en su teléfono. Sin apps que descargar, sin contraseñas que recordar.',
   },
   {
-    icono: "/Paso3.svg",
-    titulo: "Paso 3: Escaneo",
+    icono: '/Paso3.svg',
+    titulo: 'Paso 3: Escaneo',
     texto:
-      "Escanea y listo. El cliente llega, muestra su QR y en menos de 2 segundos aparece en pantalla: Acceso Permitido ✓ o Acceso Denegado con el motivo exacto.",
+      'Escanea y listo. El cliente llega, muestra su QR y en menos de 2 segundos aparece en pantalla: Acceso Permitido ✓ o Acceso Denegado con el motivo exacto.',
   },
 ];
 
 function Proceso() {
   return (
-    <div className="flex flex-col items-center justify-between text-center w-screen h-[90vh] py-10 px-20">
-      <h1 className={clsx("text-8xl font-bold max-w-4xl", geologica.className)}>
+    <div className="flex h-[90vh] w-screen flex-col items-center justify-between px-20 py-10 text-center">
+      <h1 className={clsx('max-w-4xl text-8xl font-bold', geologica.className)}>
         Así de simple es el nuevo proceso
       </h1>
-      <p className={clsx("text-xl font-normal max-w-3xl", geologica.className)}>
+      <p className={clsx('max-w-3xl text-xl font-normal', geologica.className)}>
         Tres pasos. Un dispositivo con cámara. Cero complicaciones.
       </p>
-      <div className="flex justify-between w-full mt-10">
+      <div className="mt-10 flex w-full justify-between">
         {ITEMS.map((item, index) => (
-          <div key={index} className="flex flex-col text-center max-w-xs">
-            <img src={item.icono} alt={`Icono ${index + 1}`} className="w-20 h-20 mx-auto mb-5" />
-            <h2 className={clsx("text-2xl font-bold", geologica.className)}>
-              {item.titulo}
-            </h2>
-            <p className={clsx("text-lg font-normal", geologica.className)}>
-              {item.texto}
-            </p>
+          <div key={index} className="flex max-w-xs flex-col text-center">
+            <img src={item.icono} alt={`Icono ${index + 1}`} className="mx-auto mb-5 h-20 w-20" />
+            <h2 className={clsx('text-2xl font-bold', geologica.className)}>{item.titulo}</h2>
+            <p className={clsx('text-lg font-normal', geologica.className)}>{item.texto}</p>
           </div>
         ))}
       </div>
@@ -48,4 +44,4 @@ function Proceso() {
   );
 }
 
-export default Proceso
+export default Proceso;

@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { geologica } from '@/app/layout'
+import { geologica } from '@/lib/fonts'
 import { Card } from '../ui/card';
 
 const ITEMS = [

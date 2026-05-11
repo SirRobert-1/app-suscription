@@ -1,4 +1,4 @@
-import { geologica } from '@/app/layout'
+import { geologica } from '@/lib/fonts'
 import clsx from 'clsx'
 import { Button } from '../ui/button';
 

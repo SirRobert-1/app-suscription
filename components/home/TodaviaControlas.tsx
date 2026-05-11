@@ -28,8 +28,8 @@ const ITEMS = [
 
 function TodaviaControlas() {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-between px-40 py-10 text-center">
-      <h1 className={clsx('text-8xl font-bold', geologica.className)}>
+    <div className="flex min-h-screen w-screen flex-col items-center justify-between px-5 md:px-40 py-10 text-center">
+      <h1 className={clsx('text-4xl md:text-8xl font-bold mb-5', geologica.className)}>
         ¿Todavía controlas el acceso con una lista en papel?
       </h1>
       <p className={clsx('max-w-3xl text-xl font-normal', geologica.className)}>
@@ -37,12 +37,12 @@ function TodaviaControlas() {
         membresía vencida que siguen entrando, renovaciones que nadie recuerda cobrar y sin ningún
         registro de quién entró ni cuándo.
       </p>
-      <div className="mt-10 flex w-full gap-10">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 w-full gap-10">
         {ITEMS.map((item, index) => (
           <Card
             key={index}
             className={clsx(
-              'flex w-full flex-col rounded-[25px] pt-5 pb-10 pl-5 text-start shadow-lg shadow-black/40',
+              'flex w-full flex-col rounded-[25px] pt-5 pb-10 pl-5 pr-2 text-start shadow-lg shadow-black/40',
               item.color,
               item.text
             )}

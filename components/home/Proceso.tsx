@@ -24,16 +24,16 @@ const ITEMS = [
 
 function Proceso() {
   return (
-    <div className="flex h-[90vh] w-screen flex-col items-center justify-between px-20 py-10 text-center">
-      <h1 className={clsx('max-w-4xl text-8xl font-bold', geologica.className)}>
+    <div className="flex min-h-screen w-screen flex-col items-center justify-between px-5 md:px-20 py-10 text-center">
+      <h1 className={clsx('max-w-4xl text-5xl md:text-8xl font-bold', geologica.className)}>
         Así de simple es el nuevo proceso
       </h1>
       <p className={clsx('max-w-3xl text-xl font-normal', geologica.className)}>
         Tres pasos. Un dispositivo con cámara. Cero complicaciones.
       </p>
-      <div className="mt-10 flex w-full justify-between">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 w-full place-items-center">
         {ITEMS.map((item, index) => (
-          <div key={index} className="flex max-w-xs flex-col text-center">
+          <div key={index} className="flex max-w-xs flex-col text-center mb-5 md:mb-0">
             <img src={item.icono} alt={`Icono ${index + 1}`} className="mx-auto mb-5 h-20 w-20" />
             <h2 className={clsx('text-2xl font-bold', geologica.className)}>{item.titulo}</h2>
             <p className={clsx('text-lg font-normal', geologica.className)}>{item.texto}</p>

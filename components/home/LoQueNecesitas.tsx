@@ -37,8 +37,8 @@ const ITEMS = [
 
 function LoQueNecesitas() {
   return (
-    <div className="flex min-h-screen w-screen flex-col items-center px-40 py-10 text-center">
-      <h1 className={clsx('max-w-5xl text-8xl font-bold text-balance', geologica.className)}>
+    <div className="flex min-h-screen w-screen flex-col items-center px-5 md:px-40 py-10 text-center">
+      <h1 className={clsx('max-w-5xl text-4xl md:text-8xl font-bold text-balance', geologica.className)}>
         Todo lo que necesitas para gestionar tu negocio
       </h1>
       <div className="mt-10 grid w-full grid-cols-1 gap-10 md:grid-cols-3">
@@ -46,7 +46,7 @@ function LoQueNecesitas() {
           <Card
             key={index}
             className={clsx(
-              'flex w-full flex-col rounded-[25px] pt-5 pb-10 pl-5 text-start shadow-lg shadow-black/40'
+              'flex w-full flex-col rounded-[25px] pt-5 pb-10 pl-5 pr-2 text-start shadow-lg shadow-black/40'
             )}
           >
             <h2 className={clsx('text-2xl font-bold', geologica.className)}>{item.titulo}</h2>

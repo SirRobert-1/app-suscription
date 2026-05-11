@@ -16,12 +16,12 @@ const ITEMS = [
 
 function Planes() {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-between px-40 py-10 text-center">
-      <h1 className={clsx('text-8xl font-bold', geologica.className)}>Planes</h1>
-      <p className={clsx('text-2xl font-normal', geologica.className)}>
+    <div className="flex min-h-screen w-screen flex-col items-center justify-between px-5 md:px-40 py-10 text-center">
+      <h1 className={clsx('text-5xl md:text-8xl font-bold', geologica.className)}>Planes</h1>
+      <p className={clsx('text-xl md:text-2xl font-normal', geologica.className)}>
         Uno para cada etapa de tu negocio.
       </p>
-      <div className="mt-10 flex w-full gap-10">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 w-full gap-10">
         {ITEMS.map((item, index) => (
           <Card
             key={index}

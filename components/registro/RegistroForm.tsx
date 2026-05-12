@@ -196,8 +196,8 @@ export function RegistroForm() {
           <div
             className={`w-full rounded-lg p-3 text-sm ${
               submitResult.success
-                ? 'bg-green-50 text-green-800 dark:bg-green-900/20 dark:text-green-400'
-                : 'bg-red-50 text-red-800 dark:bg-red-900/20 dark:text-red-400'
+                ? 'bg-green-200 text-green-900 dark:bg-green-900/20 dark:text-green-400'
+                : 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400'
             }`}
           >
             {submitResult.message}

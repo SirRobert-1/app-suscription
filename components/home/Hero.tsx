@@ -7,7 +7,7 @@ function Hero() {
     <div className="flex min-h-screen w-screen flex-col items-center justify-between px-5 md:px-40 py-10 text-center">
       <img src="/Vertex.svg" alt="Hero Image" className="h-24 w-24 mt-5" />
       <h1 className={clsx('text-4xl md:text-8xl font-bold', geologica.className)}>
-        CONTROLA QUIEN ENTRA A TU NEGOCIO
+        CONTROLA QUIEN ENTRA A TU <span className="text-morado">NEGOCIO</span>
       </h1>
       <h2 className={clsx('text-3xl font-medium', geologica.className)}>
         Sin papel. Sin complicaciones
